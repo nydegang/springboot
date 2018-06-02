@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<types>
+	<type id="1">
+		<name>电子</name>
+	</type>
+	<type id="2">
+		<name>烹饪</name>
+	</type>
+</types>

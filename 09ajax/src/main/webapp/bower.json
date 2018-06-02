@@ -1,0 +1,20 @@
+{
+  "name": "ajax",
+  "authors": [
+    "nydegang <149098880@qq.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "mit",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+		"art-template": "3.0.1"
+	}
+}
