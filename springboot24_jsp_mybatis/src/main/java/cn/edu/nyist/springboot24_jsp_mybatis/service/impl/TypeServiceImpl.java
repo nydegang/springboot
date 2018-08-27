@@ -8,10 +8,12 @@ import org.springframework.stereotype.Service;
 import cn.edu.nyist.springboot24_jsp_mybatis.mapper.TypeMapper;
 import cn.edu.nyist.springboot24_jsp_mybatis.model.Type;
 import cn.edu.nyist.springboot24_jsp_mybatis.service.TypeService;
+
 @Service
 public class TypeServiceImpl implements TypeService {
 	@Autowired
-   private TypeMapper typeMapper;
+	private TypeMapper typeMapper;
+
 	public TypeServiceImpl() {
 	}
 

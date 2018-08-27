@@ -1,6 +1,5 @@
 package cn.edu.nyist.springboot24_jsp_mybatis.model;
 
-import java.beans.Transient;
 import java.io.Serializable;
 import java.util.Date;
 

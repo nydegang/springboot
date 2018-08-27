@@ -22,7 +22,12 @@ import cn.edu.nyist.springboot24_jsp_mybatis.model.Book;
 import cn.edu.nyist.springboot24_jsp_mybatis.model.Type;
 import cn.edu.nyist.springboot24_jsp_mybatis.service.BookService;
 import cn.edu.nyist.springboot24_jsp_mybatis.service.TypeService;
-
+/**
+ * 
+ * @author 南阳德刚版权所有,企鹅号:2855128836<br>
+ *2018年8月27日下午6:46:30<br>
+ * 说明:书籍Controller
+ */
 @Controller
 public class BookController {
 	@Autowired
@@ -43,7 +48,7 @@ public class BookController {
 
 	@RequestMapping("/bookAdd")
 	public String doBookAdd(@Valid @ModelAttribute Book book, BindingResult result, @RequestParam String vcode, @RequestParam MultipartFile photox, HttpServletRequest request) throws Exception {
-   	  // 先验证码
+		// 先验证码
 		String serverVcode = (String) request.getSession().getAttribute(ValidateController.serverVcodeName);
 		if (!serverVcode.equalsIgnoreCase(vcode)) {
 			result.rejectValue("vcode", "vcode.book", "验证码不正确");
@@ -86,7 +91,7 @@ public class BookController {
 
 	@RequestMapping("/bookDel")
 	public String del(@RequestParam int id) {
-		int ret = bookService.delBookById(id);
+		bookService.delBookById(id);
 		return "redirect:bookList";
 	}
 
@@ -101,13 +106,13 @@ public class BookController {
 
 	@RequestMapping("/bookEdit")
 	public String doBookEdit(@Valid @ModelAttribute Book book, BindingResult result, @RequestParam String vcode, @RequestParam MultipartFile photox, HttpServletRequest request) throws Exception {
-         // 先验证码	
+		// 先验证码
 		String serverVcode = (String) request.getSession().getAttribute(ValidateController.serverVcodeName);
 		if (!serverVcode.equalsIgnoreCase(vcode)) {
-			//添加错误
-		     result.rejectValue("vcode", "eq.book.vcode", "验证码不正确");
+			// 添加错误
+			result.rejectValue("vcode", "eq.book.vcode", "验证码不正确");
 		}
-		//有错就不走了
+		// 有错就不走了
 		if (result.hasErrors()) {
 			List<Type> ls = typeService.findAllTypes();
 			request.setAttribute("types", ls);

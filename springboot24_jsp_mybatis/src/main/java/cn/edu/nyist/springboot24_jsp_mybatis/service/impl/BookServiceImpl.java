@@ -12,7 +12,12 @@ import cn.edu.nyist.springboot24_jsp_mybatis.constant.PageConstant;
 import cn.edu.nyist.springboot24_jsp_mybatis.mapper.BookMapper;
 import cn.edu.nyist.springboot24_jsp_mybatis.model.Book;
 import cn.edu.nyist.springboot24_jsp_mybatis.service.BookService;
-
+/**
+ * 
+ * @author 南阳德刚版权所有,企鹅号:2855128836<br>
+ *2018年8月27日下午6:48:56<br>
+ * 说明:
+ */
 @Service
 public class BookServiceImpl implements BookService {
 	@Autowired

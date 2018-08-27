@@ -15,6 +15,12 @@ import javax.servlet.http.HttpSession;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+/**
+ * 
+ * @author 南阳德刚版权所有,企鹅号:2855128836<br>
+ *2018年8月27日下午6:47:11<br>
+ * 说明:验证码类
+ */
 @Controller
 public class ValidateController {
 	public static final String  serverVcodeName="validateCode";

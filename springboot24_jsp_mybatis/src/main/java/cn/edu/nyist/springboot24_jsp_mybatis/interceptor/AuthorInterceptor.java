@@ -5,7 +5,12 @@ import javax.servlet.http.HttpServletResponse;
 
 import org.springframework.web.servlet.HandlerInterceptor;
 import org.springframework.web.servlet.ModelAndView;
-
+/**
+ * 
+ * @author 南阳德刚版权所有,企鹅号:2855128836<br>
+ *2018年8月27日下午6:47:45<br>
+ * 说明:springboot的拦截器
+ */
 public class AuthorInterceptor implements HandlerInterceptor {
 
 	@Override
