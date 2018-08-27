@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration>
+<!--  这个配置向那里，以什么格式追加日志
+
+ -->
+    <Appenders>
+        <Console name="STDOUT" target="SYSTEM_OUT">
+            <PatternLayout pattern="%d %-5p [%t] %C{2} (%F:%L) - %m%n"/>
+        </Console>
+    </Appenders>
+    <!--  控制记录那些日志 -->
+    <Loggers>
+       <!-- 控制一个包 -->
+        <Logger name=" org.apache.ibatis" level="trace"/>
+        <!-- 这个配置默认日志级别 :例如你指定warn,那么它输出warn,error和fatal级别的日志
+         trace, 
+         debug, 
+         info, 
+         warn,
+          error ,
+           fatal
+        -->
+        <Root level="trace">
+            <AppenderRef ref="STDOUT"/>
+        </Root>
+    </Loggers>
+</Configuration>
