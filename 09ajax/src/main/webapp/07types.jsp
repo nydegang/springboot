@@ -44,7 +44,8 @@
 	<script type="text/javascript">
 		//用iframe拿数据
 		function getData() {
-			document.getElementById("myIframe").src = "types.xml";
+			//http://localhost:8080/09ajax/07types.jsp
+			document.getElementById("myIframe").src = "http://127.0.0.1:8080/09ajax/types.xml";
 
 		}
 		//服务器回调的函数

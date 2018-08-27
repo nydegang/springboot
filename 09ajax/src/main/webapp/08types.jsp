@@ -16,6 +16,7 @@
           <\%}%>
 </script>
 	<script type="text/javascript">
+	//onload兼容性
 		function exeJs() {
 			//直接通过访问不了iframe的文档undefined
 			//console.log( document.getElementById("myIframe").document);

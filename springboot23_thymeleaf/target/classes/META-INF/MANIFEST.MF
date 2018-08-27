@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Implementation-Title: springboot23_thymeleaf
+Implementation-Version: 0.0.1-SNAPSHOT
+Built-By: HPYH
+Implementation-Vendor-Id: cn.edu.nyist
+Build-Jdk: 1.8.0_60
+Implementation-URL: http://projects.spring.io/spring-boot/springboot23
+ _thymeleaf/
+Created-By: Maven Integration for Eclipse
+Implementation-Vendor: Pivotal Software, Inc.
+

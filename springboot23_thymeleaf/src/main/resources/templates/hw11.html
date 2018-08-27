@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8"/>
+<title>模板</title>
+</head>
+<body>
+   我的第一个Thymeleaf的跑起来 <div  th:text="${name}"></div><div  th:text="#{name}"></div>
+   <select>
+		<option th:each="admin:${ls}" th:text="${admin.name}" th:value="${admin.id}"></option>
+	</select>
+</body>
+</html>

@@ -12,7 +12,7 @@
 	<script type="text/javascript" id="myScript" ></script>
 	<script type="text/javascript">
 		function getData() {
-			document.getElementById("myScript").src = "findAllTypes?t=" + Math.random();
+			document.getElementById("myScript").src = "http://127.0.0.1:8080/09ajax/findAllTypes?cb= fillSel" ;
 		}
 	</script>
 	<!-- 2、拿到数据后用模板引擎填充到Select中 -->
